@@ -9,7 +9,8 @@ public:
     void divide(int elements[], int low, int high)
     {
         int mid;
-
+        // [3,5,6,1,9,8]
+        // [3,5,6]
         // Continue dividing until only one element remains
         if (low < high)
         {

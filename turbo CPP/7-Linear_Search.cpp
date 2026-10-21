@@ -1,5 +1,5 @@
-#include <iostream>
-using namespace std;
+#include<iostream.h>
+#include<conio.h>
 
 class search
 {
@@ -39,12 +39,13 @@ public:
     }
 };
 
-int main()
+void main()
 {
+    clrscr();
     search s;
 
     s.input();
     s.operation();
 
-    return 0;
+    getch();
 }
