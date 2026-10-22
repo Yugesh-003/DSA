@@ -1,3 +1,4 @@
+// Queue implementation using array (Turbo C++)
 #include<iostream.h>
 #include<conio.h>
 
@@ -17,7 +18,7 @@ public:
     void enqueue()
     {
         int value;
-        if (rear == MAX_SIZE - 1)
+        if (rear == MAX_SIZE - 1)  // queue full
         {
             cout << "Queue is full";
         }
@@ -36,7 +37,7 @@ public:
 
     void dequeue()
     {
-        if (front == -1 || front > rear)
+        if (front == -1 || front > rear)  // queue empty
         {
             cout << "Queue is empty";
         }

@@ -1,10 +1,11 @@
+// Binary tree traversals using array representation (Turbo C++)
 #include<iostream.h>
 #include<conio.h>
 
 class Tree_traversal
 {
 public:
-    int i, tree[7];
+    int i, tree[7];  // size 7 to allow 1-based indexing up to 6
 
     void input()
     {
@@ -15,7 +16,7 @@ public:
         }
     }
 
-    void preorder(int i)
+    void preorder(int i)  // root -> left -> right
     {
         if (i <= 6 && tree[i] != -1)
         {
@@ -25,7 +26,7 @@ public:
         }
     }
 
-    void postorder(int i)
+    void postorder(int i)  // left -> right -> root
     {
         if (i <= 6 && tree[i] != -1)
         {
@@ -35,7 +36,7 @@ public:
         }
     }
 
-    void inorder(int i)
+    void inorder(int i)  // left -> root -> right
     {
         if (i <= 6 && tree[i] != -1)
         {

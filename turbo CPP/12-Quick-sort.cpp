@@ -1,9 +1,11 @@
+// Quick sort implementation (Turbo C++)
 #include<iostream.h>
 #include<conio.h>
 
 class quicksort
 {
 public:
+    // recursively divides around pivot
     void divide(int elements[], int low, int high)
     {
         int pivot_position;
@@ -15,6 +17,7 @@ public:
         }
     }
 
+    // partitions array and returns final pivot index
     int conqure(int elements[], int low, int high)
     {
         int pivot, i, j, temp;

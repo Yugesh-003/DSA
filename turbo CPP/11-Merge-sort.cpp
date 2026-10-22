@@ -1,9 +1,11 @@
+// Merge sort implementation (Turbo C++)
 #include<iostream.h>
 #include<conio.h>
 
 class merge_sort
 {
 public:
+    // recursively splits the array into halves
     void divide(int elements[], int low, int high)
     {
         int mid;
@@ -16,6 +18,7 @@ public:
         }
     }
 
+    // merges two sorted halves into one
     void merge(int elements[], int low, int mid, int high)
     {
         int i = low, j = mid + 1, k = low, temp[20];

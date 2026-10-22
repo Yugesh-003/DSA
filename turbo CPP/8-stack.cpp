@@ -1,3 +1,4 @@
+// Stack implementation using array (Turbo C++)
 #include<iostream.h>
 #include<conio.h>
 
@@ -17,28 +18,27 @@ public:
     void push()
     {
         int value;
-        cout << "Enter the value for stack";
+        cout << "Enter the value for stack: ";
         cin >> value;
-        if (top == MAX_SIZE - 1)
+        if (top == MAX_SIZE - 1)  // stack full
         {
             cout << "\nStack is over flow";
         }
         else
         {
-            top = top + 1;
-            st[top] = value;
+            st[++top] = value;
         }
     }
 
     void pop()
     {
-        if (top == -1)
+        if (top == -1)  // stack empty
         {
             cout << "\nStack is empty";
         }
         else
         {
-            cout << "\nDeleted element is" << st[top];
+            cout << "\nDeleted element is: " << st[top];
             top = top - 1;
         }
     }

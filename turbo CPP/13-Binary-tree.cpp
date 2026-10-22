@@ -1,3 +1,4 @@
+// Binary search tree using array representation (Turbo C++)
 #include<iostream.h>
 #include<conio.h>
 
@@ -10,7 +11,7 @@ public:
     {
         for (i = 1; i < 50; i++)
         {
-            tree[i] = -1;
+            tree[i] = -1;  // -1 means empty slot
         }
         count = 0;
     }
@@ -21,22 +22,23 @@ public:
         cout << "Enter the value: ";
         cin >> value;
         i = 1;
+        // traverse to find the correct empty slot
         while (tree[i] != -1)
         {
             if (value > tree[i])
             {
-                i = i * 2 + 1;
+                i = i * 2 + 1;  // go right
             }
             else
             {
-                i = i * 2;
+                i = i * 2;  // go left
             }
         }
         tree[i] = value;
         count = count + 1;
     }
 
-    void preorder(int i)
+    void preorder(int i)  // root -> left -> right
     {
         if (i < 50 && tree[i] != -1)
         {

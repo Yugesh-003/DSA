@@ -1,10 +1,11 @@
+// Graph traversal using DFS and BFS (Turbo C++)
 #include<iostream.h>
 #include<conio.h>
 
 class graph_traversal
 {
 public:
-    int n, adj_m[7][7], visited[7];
+    int n, adj_m[7][7], visited[7];  // size 7 for 1-based indexing up to 6
 
     void input()
     {
@@ -21,7 +22,7 @@ public:
         }
     }
 
-    void dfs()
+    void dfs()  // depth first search using stack
     {
         int stack[7], top = -1, position, i, start;
         cout << "Enter the starting position for DFS: ";
@@ -52,7 +53,7 @@ public:
         }
     }
 
-    void bfs()
+    void bfs()  // breadth first search using queue
     {
         int queue[7], front = -1, rear = -1, position, i, start;
         cout << "\nEnter the starting position for BFS: ";
