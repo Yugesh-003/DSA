@@ -38,7 +38,7 @@ public:
 
     void preorder(int i)
     {
-        if (i <= count && tree[i] != -1)
+        if (i < 50 && tree[i] != -1)
         {
             cout << tree[i] << "\t";
             preorder(i * 2);

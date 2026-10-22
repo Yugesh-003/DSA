@@ -4,7 +4,7 @@
 class Tree_traversal
 {
 public:
-    int i, tree[6];
+    int i, tree[7];
 
     void input()
     {

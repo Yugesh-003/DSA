@@ -26,7 +26,7 @@ public:
         else
         {
             top = top + 1;
-            st[++top] = value;
+            st[top] = value;
         }
     }
 
@@ -54,7 +54,7 @@ public:
         {
             for (i = top; i >= 0; i--)
             {
-                cout << "st[i]" << "\n";
+                cout << st[i] << "\n";
             }
         }
     }

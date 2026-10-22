@@ -4,13 +4,12 @@
 class queue
 {
 public:
-    const int MAX_SIZE;
-    int front, rear, qu[];
+    int MAX_SIZE;
+    int front, rear, qu[5];
 
     queue()
     {
-        MAX_SIZE;
-        qu[MAX_SIZE];
+        MAX_SIZE = 5;
         front = -1;
         rear = -1;
     }
@@ -37,7 +36,7 @@ public:
 
     void dequeue()
     {
-        if (front == -1 & front > rear)
+        if (front == -1 || front > rear)
         {
             cout << "Queue is empty";
         }

@@ -4,7 +4,7 @@
 class graph_traversal
 {
 public:
-    int n, adj_m[6][6], visited[6];
+    int n, adj_m[7][7], visited[7];
 
     void input()
     {
@@ -23,7 +23,7 @@ public:
 
     void dfs()
     {
-        int stack[6], top = -1, position, i, start;
+        int stack[7], top = -1, position, i, start;
         cout << "Enter the starting position for DFS: ";
         cin >> start;
         top = top + 1;
@@ -54,7 +54,7 @@ public:
 
     void bfs()
     {
-        int queue[6], front = -1, rear = -1, position, i, start;
+        int queue[7], front = -1, rear = -1, position, i, start;
         cout << "\nEnter the starting position for BFS: ";
         cin >> start;
         for (i = 1; i <= n; i++)
