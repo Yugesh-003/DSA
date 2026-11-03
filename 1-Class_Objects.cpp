@@ -9,7 +9,7 @@ using namespace std;
 class sum {
     public : int n1, n2, res;
     void input (){
-        cout << "Enter the value : ";
+        cout << "Enter two values : ";
         cin >> n1 >> n2;
     }
     void operation () {
