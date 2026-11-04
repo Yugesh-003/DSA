@@ -143,13 +143,3 @@ int main()
 }
 
 
-// Changes made:
-// #include <iostream.h> → #include <iostream>
-// #include <stdlib.h> → #include <cstdlib>
-// Removed #include <conio.h>
-// Added using namespace std;
-// void main() → int main()
-// Removed clrscr() and getch()
-// Improved output messages slightly (wording only; logic unchanged).
-// Added return 0; at the end of main().
-// Kept the original use of malloc() and free() (did not replace with new/delete) to preserve the original logic.

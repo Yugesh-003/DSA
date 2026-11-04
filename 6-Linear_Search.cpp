@@ -26,7 +26,7 @@ public:
     {
         int count = 0;
 
-        for (i = 0; i < 5; i++)
+        for (i = 0; i < n; i++)
         {
             if (search_value == element[i])
             {

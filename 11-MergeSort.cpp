@@ -5,6 +5,7 @@ using namespace std;
 class MergeSort
 {
 public:
+
     // Function to divide the array into smaller parts
     void divide(int elements[], int low, int high)
     {

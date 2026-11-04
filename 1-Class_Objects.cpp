@@ -7,7 +7,8 @@
 using namespace std;
 
 class sum {
-    public : int n1, n2, res;
+    public : 
+    int n1, n2, res;
     void input (){
         cout << "Enter two values : ";
         cin >> n1 >> n2;

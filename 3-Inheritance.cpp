@@ -25,7 +25,7 @@ protected:
         TA = basic_pay * 0.05;
         PF = basic_pay * 0.12;
 
-        if (basic_pay < 20000)
+        if (basic_pay > 20000)
         {
             LIC = basic_pay * 0.05;
         }
