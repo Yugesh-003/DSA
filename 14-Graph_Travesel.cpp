@@ -88,10 +88,9 @@ public:
             visited[i] = 0;
         }
 
-        // Insert starting vertex into queue
-        rear = rear + 1;
-        queue[rear] = start;
         front = 0;
+        rear = 0;
+        queue[front] = start;
 
         // Repeat until queue becomes empty
         while (front <= rear)
